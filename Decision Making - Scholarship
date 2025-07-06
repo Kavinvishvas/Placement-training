@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+   
+      
+        public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int age = sc.nextInt();
+    int year = sc.nextInt();
+    int income = sc.nextInt();
+    int arrears = sc.nextInt();
+    float test = sc.nextFloat();
+    float att = sc.nextFloat();
+    if( 18<=age && age<=21 &&  year>=2021 && income<=200000 && arrears<=2 && test>=60 && att>=80)
+    {
+        System.out.println("Eligible");
+    }
+    else if ( 18<=age && age<=21 &&  year>=2021 && income>=200000 && income<250000 && arrears>2 && test>=80 && att>=90)
+    {
+        System.out.println("Partially Eligible");
+    }
+    else
+    {
+        System.out.println("Not Eligible");
+    }
+}
+    }
